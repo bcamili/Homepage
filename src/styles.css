@@ -1,3 +1,86 @@
-#app{
-    color: red;
+* {
+    box-shadow: 0 0 0 1px red inset;
+}
+
+html{
+    --primaryColor: #FFC785;
+    font-size: 12px;
+}
+
+body{
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 3.4rem;
+    font-weight: normal;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    font-size: 1.8rem;
+    font-weight: normal;
+    max-width: 25ch;
+}
+
+p{
+    font-size: 1.5rem;
+    max-width: 30ch;
+}
+#projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects footer img{
+    width: 1em;
+}
+
+.project-pic{
+    width: 280px;
+    height: 250px;
+    background-color: aquamarine;
+}
+
+#about-me-section{
+
+}
+
+#about-me-pic{
+
+}
+
+#contact-me{
+    background-color: var(--primaryColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2em;
+    padding-bottom: 6em;
+}
+
+#contact-info{
+    align-self: baseline;
+    margin-left: 1em;
+}
+
+#links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+#links img{
+    width: 3.5rem;
+}
+
+#footer-image{
+    height: 80vh;
+    background-color: aquamarine;
 }
