@@ -1,3 +1,207 @@
-#app{
-    color: red;
+* {
+    box-shadow: 0 0 0 1px red inset;
+}
+
+:root{
+    --primaryColor: #FFC785;
+    font-size: 12px;
+}
+
+body{
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 3.4rem;
+    font-weight: normal;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    font-size: 1.8rem;
+    font-weight: normal;
+    max-width: 25ch;
+}
+
+p{
+    font-size: 1.4rem;
+    max-width: 30ch;
+}
+
+#about-me-section{
+ margin-top: 2em;
+}
+
+#about-me-pic{
+    width: 90vw;
+    height: 80vh;
+    background-color: aquamarine;
+    margin: 1em auto 2em;
+    box-shadow: 2px 3px 10px grey;
+    position: relative;
+}
+
+#about-me-pic h1{
+    font-size: 5em;
+    position: absolute;
+    color: white;
+    left: .1em;
+    bottom: 0em;
+}
+
+#about-me-section p{
+    font-size: 2em;
+    max-width: 60ch;
+    margin: 0.5em 1em;
+}
+
+#about-me-section footer{
+    margin: 0;
+    margin-bottom: 8em;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+#about-me-section img{
+    width: 3em;
+}
+
+#my-work-section{
+    display: flex;
+    flex-direction: column;
+}
+
+#my-work-section h1{
+    margin-bottom: .8em;
+}
+
+#projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects article{
+    margin: 0 2em 5em;
+    box-shadow: 2px 3px 10px grey;
+}
+
+#projects footer h2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#projects  footer{
+    padding: 0% 10% 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+#projects footer p{
+    margin: 0;
+}
+
+#projects footer img{
+    width: 1em;
+    margin: .1em;
+}
+
+.project-pic{
+    width: 280px;
+    height: 250px;
+    background-color: aquamarine;
+}
+
+#about-me-section{
+
+}
+
+#about-me-pic{
+
+}
+
+#contact-me{
+    background-color: var(--primaryColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2em;
+    padding-bottom: 6em;
+}
+
+#contact-info{
+    align-self: baseline;
+    margin-left: 1em;
+}
+
+#links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+#links img{
+    width: 3.5rem;
+}
+
+#page-footer{
+    display: flex;
+    flex-direction: column;
+}
+#footer-image{
+    height: 80vh;
+    background-color: aquamarine;
+}
+
+@media screen and (min-width: 656px) {
+    :root{
+        font-size: 18px;
+    }
+
+    #my-work-section h1{
+        margin-left: 1em;
+    }
+
+    #page-footer{
+        background-color: var(--primaryColor);
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #contact-me{
+        align-items: start;
+        justify-content: center;
+        padding-left: 3rem;
+    }
+
+    #contact-me h1{
+        margin: 1rem;
+    }
+
+    #contact-me h2{
+        margin: 1rem;
+    }
+
+    #contact-me p{
+        margin: 1rem;
+        font-size: 1.8em;
+    }
+
+    #links{
+        margin: 1rem;
+    }
+
+    #footer-image{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        margin-right: 4rem;
+        width: 40%;
+    }
 }
